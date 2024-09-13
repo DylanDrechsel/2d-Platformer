@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"oCol",
+  "%Name":"oColPlatform",
   "eventList":[],
   "managed":true,
-  "name":"oCol",
+  "name":"oColPlatform",
   "overriddenProperties":[],
   "parent":{
     "name":"Collisions",
@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sCol",
-    "path":"sprites/sCol/sCol.yy",
+    "name":"sColPlatform",
+    "path":"sprites/sColPlatform/sColPlatform.yy",
   },
   "spriteMaskId":null,
   "visible":true,
