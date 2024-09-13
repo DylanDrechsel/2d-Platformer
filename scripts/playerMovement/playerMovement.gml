@@ -16,11 +16,18 @@ function playerMovement(){
 	if keyJump && isOnGround {
 		ySpeed = jumpSpeed;	
 	}
+	
+	if keyRoll && isOnGround {
+		playerRoll();	
+	}
 
 	checkGroundCollision();
 
-	if directionInput != 0 {
+	if directionInput != 0 && !isRolling {
 		image_xscale = directionInput;
+		sprite_index = sPlayerRun;
+	} else if !isRolling {
+		sprite_index = sPlayerIdle;	
 	}
 	
 	// Move the player

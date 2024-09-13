@@ -8,6 +8,7 @@ function playerState(){
 			playerMovement();
 		break;
 		case STATES.ROLL:
+			playerRoll();
 		break;
 	}
 }

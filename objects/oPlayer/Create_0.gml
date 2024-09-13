@@ -12,6 +12,7 @@ directionInput = 0;
 // Movement Variables
 moveSpeed = 5;
 jumpSpeed = -9;
+rollSpeed = 8;
 grav = .25;
 xSpeed = 0;
 ySpeed = 0;
