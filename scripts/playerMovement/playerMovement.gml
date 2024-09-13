@@ -10,7 +10,7 @@ function playerMovement(){
 	ySpeed += grav;
 	
 	// Checks to see if the player is on the ground
-	var isOnGround = place_meeting(x, y + 1, oCol)
+	isOnGround = place_meeting(x, y + 1, oCol) || place_meeting(x, y + 1, oColPlatform)
 
 	// Jump
 	if keyJump && isOnGround {
@@ -22,6 +22,7 @@ function playerMovement(){
 	}
 
 	checkGroundCollision();
+	checkPlatformCollision();
 
 	if directionInput != 0 && !isRolling {
 		image_xscale = directionInput;

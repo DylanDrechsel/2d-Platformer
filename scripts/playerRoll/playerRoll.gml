@@ -7,7 +7,6 @@ function playerRoll(){
 		var _spriteLength = sprite_get_number(sPlayerRoll);
 		sprite_index = sPlayerRoll;
 		state = STATES.ROLL;
-		image_speed = .2;
 		rollTimer = _spriteLength * 3;
 	}
 	
