@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"playerRoll",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"playerRoll",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Player/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,7 @@
+// MACROS
+
+// ENUMS
+enum STATES {
+	FREE,
+	ROLL
+}
