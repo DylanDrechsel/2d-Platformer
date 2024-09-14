@@ -8,7 +8,7 @@ function playerRoll(){
 		rollTimer = _spriteLength * 3;
 	}
 	
-	if place_meeting(x + rollSpeed, y, oColWall) {
+	if place_meeting(x + rollSpeed * image_xscale, y, oColWall) {
 		sprite_index = sPlayerIdle;
 		
 		var _pixelCheck = sign(image_xscale);

@@ -7,9 +7,11 @@ function playerState(){
 		case STATES.FREE:
 			playerMovement();
 			castFireball();
+			checkWallCollision();
 		break;
 		case STATES.ROLL:
 			playerRoll();
+			checkWallCollision();
 		break;
 	}
 }
