@@ -1,15 +1,15 @@
 function checkPlatformCollision() {
     var _playerY = y;
     var _platformInstance = instance_place(x, y + ySpeed, oColPlatform);
-	
-	// Check if the player is pressing down to fall through the platform
+    
+    // Check if the player is pressing down to fall through the platform
     var _isPressingDown = keyboard_check(ord("S"));
 
     if (_platformInstance != noone) {
         var _platformY = _platformInstance.y;
 
-        // Only apply collision if the player is above the platform
-        if (_playerY + sprite_height / 2 <= _platformY) {
+        // Only apply collision if the player is above the platform and NOT pressing down
+        if (_playerY + sprite_height / 2 <= _platformY && !_isPressingDown) {
             if place_meeting(x, y + ySpeed, oColPlatform) {
                 var _pixelCheck = sign(ySpeed);
 
@@ -24,21 +24,21 @@ function checkPlatformCollision() {
                 // Stop vertical movement (ySpeed) and prevent gravity from being applied
                 ySpeed = 0;
                 grav = 0;
-            } else if _isPressingDown {
-				// If pressing down, ignore platform collision and apply gravity
-				grav = .25
-			} else {
-                // Reapply gravity if not on the platform
-                grav = .25;
             }
         }
     } else if !place_meeting(x, y + 1, oColPlatform) {
-		// Reapply gravity if no platform is beneath the player or after jumping
-		grav = .25;	
-	}
-	
-	// Ensure gravity is active when the player jumps (ySpeed < 0) or is falling
-    if ySpeed < 0 || !place_meeting(x, y + 1, oColPlatform) {
+        // Reapply gravity if no platform is beneath the player or after jumping
+        grav = 0.25;
+    }
+
+    // Ensure gravity is active when the player jumps (ySpeed < 0) or is falling
+    if (ySpeed < 0 || !place_meeting(x, y + 1, oColPlatform)) {
+        grav = 0.25;
+    }
+
+    // Allow the player to fall through the platform if pressing down
+    if (_isPressingDown) {
+        // Temporarily disable platform collision if pressing down
         grav = 0.25;
     }
 }

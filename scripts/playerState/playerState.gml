@@ -6,6 +6,7 @@ function playerState(){
 		break;
 		case STATES.FREE:
 			playerMovement();
+			castFireball();
 		break;
 		case STATES.ROLL:
 			playerRoll();
