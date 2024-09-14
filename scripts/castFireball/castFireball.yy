@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"castFireball",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"castFireball",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Player/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
