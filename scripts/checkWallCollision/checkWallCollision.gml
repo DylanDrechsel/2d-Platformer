@@ -11,4 +11,15 @@ function checkWallCollision(){
 		// Set xSpeed to 0
 		xSpeed = 0;
 	}
+	
+	if place_meeting(x + xSpeed, y + ySpeed, oColWall) {
+		// Move player close to the wall as possible
+		var _pixelCheck = sign(ySpeed)
+		while !place_meeting(x + xSpeed, y + _pixelCheck, oColWall) {
+			y += _pixelCheck;
+		}
+		
+		// Set ySpeed to 0
+		ySpeed = 0;
+	}
 }
