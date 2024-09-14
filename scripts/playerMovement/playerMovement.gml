@@ -2,7 +2,7 @@
 function playerMovement(){
 	keyLeft = keyboard_check(ord("A"));
 	keyRight = keyboard_check(ord("D"));
-	keyJump = keyboard_check(ord("W"));
+	keyJump = keyboard_check_pressed(ord("W"));
 	keyDown = keyboard_check(ord("S"))
 	keyRoll = keyboard_check(vk_space);
 	keyAttack = mouse_check_button_pressed(mb_left)

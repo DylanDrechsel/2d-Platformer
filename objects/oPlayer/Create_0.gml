@@ -18,6 +18,9 @@ xSpeed = 0;
 ySpeed = 0;
 isRolling = false;
 
+// Combat Variables
+cooldownFireball = 0;
+
 // Timers
 rollTimer = 0;
 
