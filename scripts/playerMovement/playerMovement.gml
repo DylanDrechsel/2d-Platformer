@@ -4,7 +4,7 @@ function playerMovement(){
 	keyRight = keyboard_check(ord("D"));
 	keyJump = keyboard_check_pressed(ord("W"));
 	keyDown = keyboard_check(ord("S"))
-	keyRoll = keyboard_check(vk_space);
+	keyRoll = keyboard_check_pressed(vk_space);
 	keyAttack = mouse_check_button_pressed(mb_left)
 	directionInput = keyRight - keyLeft; 
 
@@ -12,7 +12,7 @@ function playerMovement(){
 	ySpeed += grav;
 	
 	// Checks to see if the player is on the ground
-	isOnGround = place_meeting(x, y + 1, oCol) || place_meeting(x, y + 1, oColPlatform)
+	isOnGround = place_meeting(x, y + 1, oCol) || place_meeting(x, y + 1, oColPlatform) || place_meeting(x, y + 1, oColWall)
 
 	// Jump
 	if keyJump && isOnGround {
