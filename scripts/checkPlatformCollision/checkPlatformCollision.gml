@@ -1,6 +1,9 @@
 function checkPlatformCollision() {
     var _playerY = y;
     var _platformInstance = instance_place(x, y + ySpeed, oColPlatform);
+	
+	// Check if the player is pressing down to fall through the platform
+    var _isPressingDown = keyboard_check(ord("S"));
 
     if (_platformInstance != noone) {
         var _platformY = _platformInstance.y;
@@ -21,12 +24,16 @@ function checkPlatformCollision() {
                 // Stop vertical movement (ySpeed) and prevent gravity from being applied
                 ySpeed = 0;
                 grav = 0;
-            } else {
+            } else if _isPressingDown {
+				// If pressing down, ignore platform collision and apply gravity
+				grav = .25
+			} else {
                 // Reapply gravity if not on the platform
-                grav = 0.25;
+                grav = .25;
             }
         }
     } else if !place_meeting(x, y + 1, oColPlatform) {
+		// Reapply gravity if no platform is beneath the player or after jumping
 		grav = .25;	
 	}
 	
