@@ -13,10 +13,10 @@ function castFireball(){
 		
 		if (mouse_x < x) {
 		    // Mouse is to the left of the player
-		    _fireball.image_xscale = -1; // Flip the player's sprite to face left
+		    _fireball.image_xscale = -1;
 		} else {
 		    // Mouse is to the right of the player
-		    _fireball.image_xscale = 1;  // Set the player's sprite to face right (normal)
+		    _fireball.image_xscale = 1;
 		}
     
 	    // Set the fireball's direction and speed
