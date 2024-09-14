@@ -3,6 +3,7 @@ function playerMovement(){
 	keyLeft = keyboard_check(ord("A"));
 	keyRight = keyboard_check(ord("D"));
 	keyJump = keyboard_check_pressed(ord("W"));
+	keyDown = keyboard_check(ord("S"))
 	keyRoll = keyboard_check_pressed(vk_space);
 	directionInput = keyRight - keyLeft; 
 
@@ -23,6 +24,7 @@ function playerMovement(){
 
 	checkGroundCollision();
 	checkPlatformCollision();
+	checkWallCollision();
 
 	if directionInput != 0 && !isRolling {
 		image_xscale = directionInput;
