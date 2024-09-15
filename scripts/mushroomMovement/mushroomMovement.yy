@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"mushroomMovement",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"mushroomMovement",
+  "parent":{
+    "name":"Enemy",
+    "path":"folders/Enemy.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
