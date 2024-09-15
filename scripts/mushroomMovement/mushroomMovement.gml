@@ -3,18 +3,6 @@
 function mushroomMovement(){
 	sprite_index = sMushroomRun;
 	ySpeed = grav;
-	
-	// X Collision
-	if place_meeting(x + xSpeed, y, oCol) {
-		// Move player close to the wall as possible
-		var _pixelCheck = sign(xSpeed)
-		while !place_meeting(x + _pixelCheck, y, oCol) {
-			x += _pixelCheck;
-		}
-		
-		// Set xSpeed to 0
-		xSpeed = 0;
-	}
 
 	// Y Collision
 	if place_meeting(x + xSpeed, y + ySpeed, oCol) {
@@ -34,8 +22,8 @@ function mushroomMovement(){
 
     // Check for a wall or edge of platform to reverse direction
     var _wallCollision = place_meeting(x + xSpeed, y, oColWall);
-    var _noGround = !place_meeting(x + 1, y + 1, oCol);
-	var _noPlatform = place_meeting(x + 1, y + 1, oColPlatform);
+    var _noGround = !place_meeting(x + xSpeed, y + 1, oCol);
+	var _noPlatform = place_meeting(x + xSpeed, y + 1, oColPlatform);
 
     // If the enemy hits a wall or reaches the edge of a platform, reverse direction
     if (_wallCollision || _noGround || _noPlatform) {

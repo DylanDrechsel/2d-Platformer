@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"mushroomMovement",
   "parent":{
-    "name":"Enemy",
-    "path":"folders/Enemy.yy",
+    "name":"Mushroom",
+    "path":"folders/Enemy/Mushroom.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
