@@ -1,7 +1,11 @@
 // MACROS
+#macro HURT		0
 
 // ENUMS
 enum STATES {
 	FREE,
-	ROLL
+	DAMAGE,
+	ROLL,
+	DEAD,
+	MUSHROOM_FREE
 }

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"isDead",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"isDead",
+  "parent":{
+    "name":"Entity",
+    "path":"folders/Entity.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
