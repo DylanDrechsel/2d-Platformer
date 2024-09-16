@@ -1,2 +1,5 @@
 /// @description Insert description here
-instance_destroy();
+if other.hp >= 0 {
+	damageEntity(other, ownerID, damage);
+	instance_destroy();
+}
