@@ -3,7 +3,7 @@
 function castFireball(){
 	if (keyAttack && cooldownFireball <= 0) {
 		// Sets timer for coowdownFireball
-		cooldownFireball = 60;
+		cooldownFireball = 30;
 		
 		// Create a fireball at the player's current position
 		var _fireball = instance_create_layer(x, y + 6, "Instances", oFireball);
