@@ -10,10 +10,13 @@
   "name":"oMushroom",
   "overriddenProperties":[],
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Enemy/Mushroom/Sprites.yy",
+    "name":"Mushroom",
+    "path":"folders/Enemy/Mushroom.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oEnemyParnet",
+    "path":"objects/oEnemyParnet/oEnemyParnet.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -35,6 +38,9 @@
     "name":"sMushroomIdle",
     "path":"sprites/sMushroomIdle/sMushroomIdle.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"sMushroomIdle",
+    "path":"sprites/sMushroomIdle/sMushroomIdle.yy",
+  },
   "visible":true,
 }
