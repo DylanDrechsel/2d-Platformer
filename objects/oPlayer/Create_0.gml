@@ -19,6 +19,9 @@ xSpeed = 0;
 ySpeed = 0;
 isRolling = false;
 jumpDamage = 4;
+isOnGround = true;
+isOnPlatform = false;
+fallThrough = false;
 
 // Combat Variables
 cooldownFireball = 0;

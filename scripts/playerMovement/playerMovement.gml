@@ -12,10 +12,10 @@ function playerMovement(){
 	ySpeed += grav;
 	
 	// Checks to see if the player is on the ground
-	isOnGround = place_meeting(x, y + 1, oCol) || place_meeting(x, y + 1, oColPlatform) || place_meeting(x, y + 1, oColWall)
+	isOnGround = place_meeting(x, y + 1, oCol) || place_meeting(x, y + 1, oColWall)
 
 	// Jump
-	if keyJump && isOnGround {
+	if keyJump && isOnGround || keyJump && isOnPlatform {
 		ySpeed = jumpSpeed;	
 	}
 	
