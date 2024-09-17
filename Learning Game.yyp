@@ -39,6 +39,7 @@
     {"id":{"name":"oEnemyParnet","path":"objects/oEnemyParnet/oEnemyParnet.yy",},},
     {"id":{"name":"oFireball","path":"objects/oFireball/oFireball.yy",},},
     {"id":{"name":"oMushroom","path":"objects/oMushroom/oMushroom.yy",},},
+    {"id":{"name":"oMushroomHitbox","path":"objects/oMushroomHitbox/oMushroomHitbox.yy",},},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},},
     {"id":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},

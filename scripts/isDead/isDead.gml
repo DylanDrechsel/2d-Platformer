@@ -3,5 +3,6 @@
 function isDead(){
 	if hp <= 0 {
 		state = STATES.DEAD;
+		return true;
 	}
 }
