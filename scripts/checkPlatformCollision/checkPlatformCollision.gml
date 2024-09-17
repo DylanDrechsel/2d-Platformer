@@ -5,7 +5,7 @@ function checkPlatformCollision() {
     // Check if the player is pressing down to fall through the platform
     var _isPressingDown = keyboard_check(ord("S"));
 
-    // Start falling through the platform if pressing down
+    // If pressing down, allow the player to fall through the platform regardless of jump state
     if (_isPressingDown) {
         fallThrough = true;
     }
@@ -13,38 +13,42 @@ function checkPlatformCollision() {
     if (_platformInstance != noone) {
         var _platformY = _platformInstance.y;
 
-        // Only apply collision if the player is above the platform, not pressing down, and not in fallThrough state
-        if (_playerY <= _platformY && !_isPressingDown && !fallThrough) {
-            if place_meeting(x, y + ySpeed, oColPlatform) {
+        // Only apply collision if the player is above the platform, not in fallThrough state
+        if (_playerY <= _platformY && !fallThrough) {
+            if (place_meeting(x, y + ySpeed, oColPlatform)) {
                 var _pixelCheck = sign(ySpeed);
-				isOnPlatform = true;
-				
-				if ySpeed > .25 {
+
+                // Only apply collision if the player is falling
+                if (ySpeed > 0.25) {
                     // Move the player upwards pixel by pixel until they're no longer colliding
                     while (!place_meeting(x, y + 1, oColPlatform)) {
                         y += _pixelCheck;
                     }
 
-                    // Stop vertical movement (ySpeed) and prevent gravity from being applied
+                    // Set the player to the top of the platform and stop vertical movement
                     ySpeed = 0;
                     grav = 0;
+                    isOnPlatform = true;
                 }
-			}              
+            }              
         }
     } else {
-        // Reapply gravity if no platform is beneath the player or after jumping
+        // Reapply gravity if no platform is beneath the player
         grav = 0.25;
         isOnPlatform = false;
     }
 
-    // Ensure gravity is active when the player jumps (ySpeed < 0) or is falling
+    // Ensure gravity is active when the player jumps or is falling
     if (ySpeed < 0 || !place_meeting(x, y + 1, oColPlatform)) {
         grav = 0.25;
     }
+	
+	if (fallThrough && keyDown) {
+		grav = 0.25;	
+	}
 
-    // Handle the fall-through state: Once the player has completely fallen through the platform, reset the flag
+    // Handle the fallThrough state: Once the player has completely fallen through the platform, reset the flag
     if (fallThrough && !place_meeting(x, y + 1, oColPlatform)) {
-        fallThrough = false; // Reset the fallThrough state once the player is clear of the platform
-		isOnPlatform = false;
+        fallThrough = false;  // Reset the fallThrough state after falling through
     }
 }

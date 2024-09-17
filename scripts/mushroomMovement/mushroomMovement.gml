@@ -31,7 +31,7 @@ function mushroomMovement(){
     // Check for a wall or edge of platform to reverse direction
     var _wallCollision = place_meeting(x + xSpeed, y, oColWall);
     var _noGround = !place_meeting(x + sign(xSpeed) * 12, y + 1, oCol);
-	var _noPlatform = place_meeting(x, y + 1, oColPlatform);
+	var _noPlatform = place_meeting(x + sign(xSpeed) * 12, y + 1, oColPlatform);
 
     // If the enemy hits a wall or reaches the edge of a platform, reverse direction
     if (_wallCollision || _noGround) {
