@@ -58,6 +58,7 @@
     {"id":{"name":"sColPlatform","path":"sprites/sColPlatform/sColPlatform.yy",},},
     {"id":{"name":"sColWall","path":"sprites/sColWall/sColWall.yy",},},
     {"id":{"name":"sFireball","path":"sprites/sFireball/sFireball.yy",},},
+    {"id":{"name":"sMudhroomHitbox","path":"sprites/sMudhroomHitbox/sMudhroomHitbox.yy",},},
     {"id":{"name":"sMushroomAttack","path":"sprites/sMushroomAttack/sMushroomAttack.yy",},},
     {"id":{"name":"sMushroomDie","path":"sprites/sMushroomDie/sMushroomDie.yy",},},
     {"id":{"name":"sMushroomHit","path":"sprites/sMushroomHit/sMushroomHit.yy",},},
