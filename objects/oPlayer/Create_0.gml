@@ -8,6 +8,7 @@ keyRight = false;
 keyJump = false;
 keyRoll = false;
 directionInput = 0;
+ownerID = noone;
 
 // Movement Variables
 moveSpeed = 5;
@@ -17,6 +18,7 @@ grav = .25;
 xSpeed = 0;
 ySpeed = 0;
 isRolling = false;
+jumpDamage = 4;
 
 // Combat Variables
 cooldownFireball = 0;

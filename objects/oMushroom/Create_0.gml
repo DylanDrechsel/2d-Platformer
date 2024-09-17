@@ -8,6 +8,7 @@ grav = .25;
 state = STATES.MUSHROOM_FREE;
 
 // Attack
+ownerID = noone;
 attackRange = 30;
 hurtTime = 30;
 
