@@ -4,6 +4,7 @@
 // ENUMS
 enum STATES {
 	FREE,
+	ATTACK,
 	DAMAGE,
 	ROLL,
 	DEAD,
