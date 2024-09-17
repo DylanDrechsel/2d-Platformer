@@ -8,6 +8,7 @@ function playerState(){
 			playerMovement();
 			castFireball();
 			checkWallCollision();
+			jumpOnMushroom();
 		break;
 		case STATES.ROLL:
 			playerRoll();

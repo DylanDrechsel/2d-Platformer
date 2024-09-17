@@ -2,9 +2,11 @@ switch (state) {
 	case STATES.MUSHROOM_FREE:
 		mushroomMovement();
 		enemyAnimation();
+		mushroomCheckForPlayer();
 	break;
 	case STATES.ATTACK:
 		enemyAnimation();
+		mushroomCheckForPlayer();
 	break;
 	case STATES.DAMAGE: 
 		enemyAnimation();

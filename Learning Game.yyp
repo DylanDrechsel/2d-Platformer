@@ -50,6 +50,7 @@
     {"id":{"name":"damageEntity","path":"scripts/damageEntity/damageEntity.yy",},},
     {"id":{"name":"enemyAnimation","path":"scripts/enemyAnimation/enemyAnimation.yy",},},
     {"id":{"name":"isDead","path":"scripts/isDead/isDead.yy",},},
+    {"id":{"name":"jumpOnMushroom","path":"scripts/jumpOnMushroom/jumpOnMushroom.yy",},},
     {"id":{"name":"macros_enums","path":"scripts/macros_enums/macros_enums.yy",},},
     {"id":{"name":"mushroomCheckForPlayer","path":"scripts/mushroomCheckForPlayer/mushroomCheckForPlayer.yy",},},
     {"id":{"name":"mushroomMovement","path":"scripts/mushroomMovement/mushroomMovement.yy",},},

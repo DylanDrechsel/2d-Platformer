@@ -5,7 +5,7 @@ function mushroomCheckForPlayer(){
 	var _playerX = oPlayer.x;
 	var _mushroomX = x;
 
-	if abs(_playerX - _mushroomX) <= attackRange {
+	if abs(_playerX - _mushroomX) <= attackRange && abs(oPlayer.y - y) <= 50 {
 		state = STATES.ATTACK
 		if _playerX - _mushroomX {
 			image_xscale = -1;
