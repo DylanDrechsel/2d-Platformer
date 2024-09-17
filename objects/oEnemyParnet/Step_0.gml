@@ -7,6 +7,7 @@ switch (state) {
 	case STATES.ATTACK:
 		enemyAnimation();
 		mushroomCheckForPlayer();
+		mushroomAttack();
 	break;
 	case STATES.DAMAGE: 
 		enemyAnimation();

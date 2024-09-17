@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"mushroomCheckForPlayer",
+  "%Name":"mushroomAttack",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"mushroomCheckForPlayer",
+  "name":"mushroomAttack",
   "parent":{
     "name":"Mushroom",
     "path":"folders/Enemy/Mushroom.yy",

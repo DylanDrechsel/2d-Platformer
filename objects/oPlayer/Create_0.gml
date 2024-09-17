@@ -24,6 +24,8 @@ isOnPlatform = false;
 fallThrough = false;
 
 // Combat Variables
+hpMax = 50;
+hp = hpMax;
 cooldownFireball = 0;
 
 // Timers
