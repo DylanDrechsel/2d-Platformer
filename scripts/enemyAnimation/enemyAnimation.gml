@@ -5,11 +5,13 @@ function enemyAnimation(){
 		case STATES.MUSHROOM_FREE:
 			sprite_index = sWalk;
 		break;
+		case STATES.ATTACK:
+			sprite_index = sAttack;
+		break;
 		case STATES.DAMAGE: 
 			sprite_index = sHurt;
 		break;
 		case STATES.DEAD:
-			checkGroundCollision();
 			if sprite_index != sDead {
 				sprite_index = sDead;
 				image_index = 0;
@@ -18,7 +20,6 @@ function enemyAnimation(){
 			if image_index >= image_number - 1 {
 				image_speed = 0;	
 			}
-			
 		break;
 	}
 }
