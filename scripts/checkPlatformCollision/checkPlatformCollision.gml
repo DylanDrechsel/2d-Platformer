@@ -17,15 +17,7 @@ function checkPlatformCollision() {
         if (_playerY <= _platformY && !_isPressingDown && !fallThrough) {
             if place_meeting(x, y + ySpeed, oColPlatform) {
                 var _pixelCheck = sign(ySpeed);
-
-                // Make sure the player is falling, not jumping or rising through the platform
-                if ySpeed > 0 {
-                    // Move the player upwards pixel by pixel until they're no longer colliding
-                    while (!place_meeting(x, y + 1, oColPlatform)) {
-                        y += _pixelCheck;
-                    }
-
-                    // Set y position exactly on top of the platform
+				// Set y position exactly on top of the platform
                     y = _platformY - sprite_height / 2;
 
                     // Stop vertical movement (ySpeed) and prevent gravity from being applied
@@ -33,7 +25,8 @@ function checkPlatformCollision() {
                     grav = 0;
                     isOnPlatform = true;
                 }
-            }
+
+               
         }
     } else {
         // Reapply gravity if no platform is beneath the player or after jumping
@@ -42,12 +35,13 @@ function checkPlatformCollision() {
     }
 
     // Ensure gravity is active when the player jumps (ySpeed < 0) or is falling
-    if (ySpeed < 0 || !place_meeting(x, y + 1, oColPlatform)) {
+    if (ySpeed < 0.25 || !place_meeting(x, y + 1, oColPlatform)) {
         grav = 0.25;
     }
 
     // Handle the fall-through state: Once the player has completely fallen through the platform, reset the flag
     if (fallThrough && !place_meeting(x, y + 1, oColPlatform)) {
         fallThrough = false; // Reset the fallThrough state once the player is clear of the platform
+		isOnPlatform = false;
     }
 }
