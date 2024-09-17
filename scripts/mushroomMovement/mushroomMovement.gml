@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function mushroomMovement(){
 	ySpeed = grav;
+	image_xscale = sign(-xSpeed);
 
 	// Y Collision
 	if place_meeting(x + xSpeed, y + ySpeed, oCol) {
