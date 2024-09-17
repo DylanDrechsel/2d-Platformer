@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"jumpOnMushroom",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"jumpOnMushroom",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Player/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

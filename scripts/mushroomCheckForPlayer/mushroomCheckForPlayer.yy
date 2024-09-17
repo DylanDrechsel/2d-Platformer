@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"mushroomCheckForPlayer",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"mushroomCheckForPlayer",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Enemy/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
