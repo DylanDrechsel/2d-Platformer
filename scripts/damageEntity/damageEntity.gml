@@ -10,5 +10,9 @@ function damageEntity(_targetID, _sourceID, _damage){
 		var _dead = isDead();
 		
 		if (_dead) exit;
+		
+		alarm[HURT] = hurtTime;
+		state = STATES.DAMAGE;
+		image_index = 0;
 	}
 }

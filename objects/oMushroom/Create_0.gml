@@ -8,7 +8,8 @@ grav = .25;
 state = STATES.MUSHROOM_FREE;
 
 // Attack
-attackRange = 25;
+attackRange = 30;
+hurtTime = 30;
 
 // Sprites
 sHurt = sMushroomHit;
