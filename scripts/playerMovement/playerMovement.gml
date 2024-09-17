@@ -19,7 +19,7 @@ function playerMovement(){
 		ySpeed = jumpSpeed;	
 	}
 	
-	if keyRoll && isOnGround {
+	if keyRoll && (isOnGround || isOnPlatform) {
 		playerRoll();	
 	}
 
