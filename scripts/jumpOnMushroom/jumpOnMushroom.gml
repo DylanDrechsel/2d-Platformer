@@ -9,7 +9,7 @@ function jumpOnMushroom() {
         if (y <= _mushroom.bbox_top && _mushroom.state = STATES.MUSHROOM_FREE) {
 			damageEntity(_mushroom, ownerID, jumpDamage);
             // Apply jump and bounce back up
-            ySpeed = jumpSpeed * 1.25;
+            ySpeed = jumpSpeed;
         }
     }
 }
