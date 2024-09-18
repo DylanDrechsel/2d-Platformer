@@ -1,5 +1,5 @@
 function mushroomAttack() {
-    // Create the hitbox instance
+    // Create a new hitbox instance for the current frame
     var _hitbox = instance_create_layer(x, y, "Collisions", oMushroomHitbox);
     _hitbox.parent = id;
 
@@ -10,7 +10,7 @@ function mushroomAttack() {
         // Sync the hitbox position with the mushroom
         _hitbox.x = x;
         _hitbox.y = y;
-		_hitbox.image_xscale = image_xscale;
+        _hitbox.image_xscale = image_xscale;
 
         // Update hitbox mask based on the current frame of the mushroom animation
         switch (_currentFrame) {
@@ -29,7 +29,11 @@ function mushroomAttack() {
             case 4:
                 _hitbox.mask_index = sMushroomHitbox_4;
                 break;
+			case 5:
+				instance_destroy(oMushroomHitbox);
+				break;
             default:
+                instance_destroy(_hitbox);
                 break;
         }
     }
