@@ -27,6 +27,7 @@ fallThrough = false;
 hpMax = 50;
 hp = hpMax;
 cooldownFireball = 0;
+hurtTime = 40;
 
 // Timers
 rollTimer = 0;

@@ -73,6 +73,8 @@
     {"id":{"name":"sMushroomHitbox","path":"sprites/sMushroomHitbox/sMushroomHitbox.yy",},},
     {"id":{"name":"sMushroomIdle","path":"sprites/sMushroomIdle/sMushroomIdle.yy",},},
     {"id":{"name":"sMushroomRun","path":"sprites/sMushroomRun/sMushroomRun.yy",},},
+    {"id":{"name":"sPlayerDeath","path":"sprites/sPlayerDeath/sPlayerDeath.yy",},},
+    {"id":{"name":"sPlayerHit","path":"sprites/sPlayerHit/sPlayerHit.yy",},},
     {"id":{"name":"sPlayerIdle","path":"sprites/sPlayerIdle/sPlayerIdle.yy",},},
     {"id":{"name":"sPlayerRoll","path":"sprites/sPlayerRoll/sPlayerRoll.yy",},},
     {"id":{"name":"sPlayerRun","path":"sprites/sPlayerRun/sPlayerRun.yy",},},
