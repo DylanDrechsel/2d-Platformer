@@ -15,16 +15,7 @@ function playerState(){
 			checkWallCollision();
 		break;
 		case STATES.DAMAGE:
-			if sprite_index != sPlayerHit {
-				sprite_index = sPlayerHit;
-				alarm[HURT] = hurtTime;
-			}
-			if alarm[HURT] > 0 {
-				if !checkWallCollision() {
-					x += (2 * -image_xscale);
-				}
-			}
-			if alarm[HURT] <= 0 state = STATES.FREE; 
+			playerPushBack(); 
 		break;
 	}
 }

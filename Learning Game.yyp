@@ -57,6 +57,7 @@
     {"id":{"name":"mushroomCheckForPlayer","path":"scripts/mushroomCheckForPlayer/mushroomCheckForPlayer.yy",},},
     {"id":{"name":"mushroomMovement","path":"scripts/mushroomMovement/mushroomMovement.yy",},},
     {"id":{"name":"playerMovement","path":"scripts/playerMovement/playerMovement.yy",},},
+    {"id":{"name":"playerPushBack","path":"scripts/playerPushBack/playerPushBack.yy",},},
     {"id":{"name":"playerRoll","path":"scripts/playerRoll/playerRoll.yy",},},
     {"id":{"name":"playerState","path":"scripts/playerState/playerState.yy",},},
     {"id":{"name":"sCol","path":"sprites/sCol/sCol.yy",},},
