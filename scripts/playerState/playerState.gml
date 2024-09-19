@@ -15,6 +15,7 @@ function playerState(){
 			checkWallCollision();
 		break;
 		case STATES.DAMAGE:
-			sprite_index = sPlayerRoll;
+			playerPushBack(); 
+		break;
 	}
 }

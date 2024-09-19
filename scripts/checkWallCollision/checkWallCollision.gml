@@ -10,6 +10,7 @@ function checkWallCollision(){
 		
 		// Set xSpeed to 0
 		xSpeed = 0;
+		return true;
 	}
 	
 	if place_meeting(x + xSpeed, y + ySpeed, oColWall) {
@@ -21,5 +22,6 @@ function checkWallCollision(){
 		
 		// Set ySpeed to 0
 		ySpeed = 0;
+		return true;
 	}
 }

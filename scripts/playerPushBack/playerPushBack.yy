@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"playerPushBack",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"playerPushBack",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Player/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
