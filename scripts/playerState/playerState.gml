@@ -18,7 +18,10 @@ function playerState(){
 			playerPushBack(); 
 		break;
 		case STATES.DEAD:
-			sprite_index = sPlayerDeath;
+			if sprite_index != sPlayerDeath {
+				sprite_index = sPlayerDeath;
+				image_index = 0;
+			}
 			if floor(image_index) = 3 image_speed = 0;
 		break;
 	}
