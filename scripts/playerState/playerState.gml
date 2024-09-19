@@ -17,5 +17,9 @@ function playerState(){
 		case STATES.DAMAGE:
 			playerPushBack(); 
 		break;
+		case STATES.DEAD:
+			sprite_index = sPlayerDeath;
+			if floor(image_index) = 3 image_speed = 0;
+		break;
 	}
 }
