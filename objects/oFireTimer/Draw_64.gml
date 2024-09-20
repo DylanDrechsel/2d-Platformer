@@ -10,7 +10,7 @@ var _formattedMillis = string_format(_milliseconds, 0, 0);
 
 // Set the margin for the top-right corner
 var _positionX = 1200;
-var _positionY = 20;
+var _positionY = 15;
 
 // Set the font color to white
 draw_set_color(c_white);
