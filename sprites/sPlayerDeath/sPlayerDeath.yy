@@ -62,7 +62,7 @@
     },
     "name":"sPlayerDeath",
     "playback":1,
-    "playbackSpeed":2.0,
+    "playbackSpeed":3.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
