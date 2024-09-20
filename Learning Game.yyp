@@ -45,6 +45,7 @@
     {"id":{"name":"oFirerain","path":"objects/oFirerain/oFirerain.yy",},},
     {"id":{"name":"oFirerainAnimation","path":"objects/oFirerainAnimation/oFirerainAnimation.yy",},},
     {"id":{"name":"oFirerainParent","path":"objects/oFirerainParent/oFirerainParent.yy",},},
+    {"id":{"name":"oFireTimer","path":"objects/oFireTimer/oFireTimer.yy",},},
     {"id":{"name":"oHealthBar","path":"objects/oHealthBar/oHealthBar.yy",},},
     {"id":{"name":"oMushroom","path":"objects/oMushroom/oMushroom.yy",},},
     {"id":{"name":"oMushroomHitbox","path":"objects/oMushroomHitbox/oMushroomHitbox.yy",},},

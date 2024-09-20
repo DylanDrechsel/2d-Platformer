@@ -12,5 +12,5 @@ if (alarm[1] <= 0) {
     instance_create_layer(xSpawn, 0, "Enemies", oFirerain);
 
     // Reset the alarm
-    alarm[1] = 30;
+    alarm[1] = firerainCountdown;
 }
