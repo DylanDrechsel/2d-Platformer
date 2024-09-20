@@ -1,0 +1,9 @@
+Bugs to fix:
+
+Roll oMushroom interactions
+	--> Roll from platform to top of oMushroom should make the player jump
+	--> State issue when oPlayer rolls through an enemy
+	
+Other Issues:
+	--> When oFirerain hits oPlayer while rolling I get a state error
+	--> When oPlayer rolls over a gap the gravity kicks in and pushes them below the ground

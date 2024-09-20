@@ -39,6 +39,7 @@
   },
   "name":"Learning Game",
   "resources":[
+    {"id":{"name":"To Do","path":"notes/To Do/To Do.yy",},},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},},
     {"id":{"name":"oCoin","path":"objects/oCoin/oCoin.yy",},},
     {"id":{"name":"oCol","path":"objects/oCol/oCol.yy",},},
