@@ -29,10 +29,8 @@ function mushroomAttack() {
             case 4:
                 _hitbox.mask_index = sMushroomHitbox_4;
             break;
-			case 5:
-				instance_destroy(oMushroomHitbox);
-			break;
             default:
+				instance_destroy(oMushroomHitbox);
                 instance_destroy(_hitbox);
 			break;
         }
