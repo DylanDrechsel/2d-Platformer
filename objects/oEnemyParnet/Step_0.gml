@@ -18,6 +18,10 @@ switch (state) {
 		if !reward {
 			oFirerainParent.firerainCountdown += .05;
 			reward = true;
+			alarm[1] = 100;
+		}
+		if alarm[1] <= 0 {
+			instance_destroy();
 		}
 	break;
 }

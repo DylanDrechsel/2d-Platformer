@@ -4,7 +4,7 @@ function mushroomAttack() {
     _hitbox.parent = id;
 
     // Make sure the current sprite and frame are properly initialized
-    if (sprite_index != -1) {
+    if (sprite_index != -1 && image_index <= 5) {
         var _currentFrame = floor(image_index); // Get the current frame of the animation
         
         // Sync the hitbox position with the mushroom
@@ -16,25 +16,28 @@ function mushroomAttack() {
         switch (_currentFrame) {
             case 0:
                 _hitbox.mask_index = sMushroomHitbox;
-                break;
+            break;
             case 1:
                 _hitbox.mask_index = sMushroomHitbox_1;
-                break;
+            break;
             case 2:
                 _hitbox.mask_index = sMushroomHitbox_2;
-                break;
+            break;
             case 3:
                 _hitbox.mask_index = sMushroomHitbox_3;
-                break;
+            break;
             case 4:
                 _hitbox.mask_index = sMushroomHitbox_4;
-                break;
+            break;
 			case 5:
 				instance_destroy(oMushroomHitbox);
-				break;
+			break;
             default:
                 instance_destroy(_hitbox);
-                break;
+			break;
         }
-    }
+    } else {
+		instance_destroy(oMushroomHitbox);
+		instance_destroy(_hitbox);
+	}
 }
