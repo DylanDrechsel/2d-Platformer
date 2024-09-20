@@ -25,7 +25,7 @@ function playerRoll() {
 
     // If the player is in the air (not touching the ground or platforms), apply gravity
     if (!place_meeting(x + rollSpeed, y + 1, oCol) && !place_meeting(x + rollSpeed, y + 1, oColPlatform)) {
-        ySpeed += .5; // Increase ySpeed to simulate falling
+        ySpeed += .5;
     }
 
     // Update position
