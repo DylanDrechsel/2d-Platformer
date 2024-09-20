@@ -1,4 +1,4 @@
-damage =  10;
+damage =  20;
 ySpeedMin = 2;
 ySpeedMax = 8;
 xSpeedMin = -1;
