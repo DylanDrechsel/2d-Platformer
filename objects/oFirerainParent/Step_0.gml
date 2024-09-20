@@ -14,3 +14,8 @@ if (alarm[1] <= 0) {
     // Reset the alarm
     alarm[1] = firerainCountdown;
 }
+
+if alarm[2] <= 0 && firerainCountdown >= 5 {
+	firerainCountdown -= 1
+	alarm[2] = 100;	
+}
