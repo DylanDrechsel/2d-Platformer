@@ -24,7 +24,7 @@ isOnPlatform = false;
 fallThrough = false;
 
 // Combat Variables
-hpMax = 50;
+hpMax = 100;
 hp = hpMax;
 cooldownFireball = 0;
 hurtTime = 40;
