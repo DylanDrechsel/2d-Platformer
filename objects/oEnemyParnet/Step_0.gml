@@ -15,5 +15,9 @@ switch (state) {
 	break;
 	case STATES.DEAD:
 		enemyAnimation();
+		if !reward {
+			oFirerainParent.firerainCountdown += .05;
+			reward = true;
+		}
 	break;
 }
